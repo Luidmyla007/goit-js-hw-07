@@ -5,12 +5,15 @@ const myGalery = document.querySelector(".gallery");
 
 const markup = galleryItems
 .map(({ preview, original, description }) => `<div class = "gallery__item">
-  <a class="gallery__link" href="${original}" onclick="return false;" >
+  <a class="gallery__link" href="${original}" onclick="return false;">
   <img class = "gallery__image" src="${preview}" data-source = "${original}" alt="${description}"/></a></div>`)
 .join("");
 
-
 myGalery.insertAdjacentHTML("afterbegin", markup); 
+// const imageLink = document.querySelector(".gallery__link");
+// imageLink.style.pointerEvents = "none";
+// console.log(imageLink.style);
+
 const galleryItem = document.querySelector(".gallery__image");
 
 myGalery.addEventListener('click', onClick);
@@ -27,5 +30,8 @@ function onClick(event) {
   
  }
 // instance.close(); 
+// {/* <a class="gallery__link" href="${original}" onclick="return false;" ></a> */}
+
+// button.style.backgroundColor = "teal";
   
 
