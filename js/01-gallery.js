@@ -10,14 +10,14 @@ const markup = galleryItems
 .join("");
 
 myGalery.insertAdjacentHTML("afterbegin", markup); 
-// const imageLink = document.querySelector(".gallery__link");
-// imageLink.style.pointerEvents = "none";
-// console.log(imageLink.style);
 
 const galleryItem = document.querySelector(".gallery__image");
 
 myGalery.addEventListener('click', onClick);
-function onClick(event) {
+function onClick(event, viewOnClick) {
+  function viewOnClick(event) {
+    event.preventDefault()
+  }
   if (event.target.classList.contains("gallery")) {
     return;
   }
@@ -30,8 +30,6 @@ function onClick(event) {
   
  }
 // instance.close(); 
-// {/* <a class="gallery__link" href="${original}" onclick="return false;" ></a> */}
 
-// button.style.backgroundColor = "teal";
   
 
