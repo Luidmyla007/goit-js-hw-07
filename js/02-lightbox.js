@@ -1,7 +1,7 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 const myGalery = document.querySelector(".gallery");
 
@@ -14,5 +14,5 @@ const markup = galleryItems
 myGalery.insertAdjacentHTML("afterbegin", markup); 
 const galleryItem = document.querySelector(".gallery__image");
 
-var lightbox = new SimpleLightbox('.gallery a', { captionSelector: 'img', sourceAttrsrc: 'href', 
+const lightbox = new SimpleLightbox('.gallery a', { captionSelector: 'img', sourceAttrsrc: 'href', 
  captionsData: 'alt', captionDelay: 250 });
