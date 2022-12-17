@@ -28,23 +28,7 @@ function onClick(event) {
   instance.show(); 
   
  }
-// onclick="return false;
+
 
   
 
-// myGalery.addEventListener('click', onClick);
-// function onClick(event, viewOnClick) {
-//   function viewOnClick(event) {
-//     event.preventDefault()
-//   }
-//   if (event.target.classList.contains("gallery")) {
-//     return;
-//   }
-//   const itemOriginalLink = event.target.getAttribute("data-source");
-
-//     const instance = basicLightbox.create(
-//        `<img  class = "original"  src="${itemOriginalLink}"  alt="${galleryItem.alt}"/>`
-//      ); 
-//   instance.show(); 
-  
-//  }
