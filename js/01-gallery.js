@@ -29,7 +29,7 @@ function onClick(event, viewOnClick) {
   instance.show(); 
   
  }
-// instance.close(); 
+
 
   
 
